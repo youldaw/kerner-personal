@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid head-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<nav class="navbar navbar-expand-lg">
+								<div class="navbar-collapse">
+									<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link" href="#">О компании</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Оплата и доставка</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Производители</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Новости и статьи</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Контакты</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Отзывы</a>
+										</li>
+									</ul>
+									<div class="nav-socials">
+										<a href="#!"><img src="images/vk-icon.svg" alt=""></a>
+										<a href="#!"><img src="images/facebook-icon.svg" alt=""></a>
+										<a href="#!"><img src="images/youtube-icon.svg" alt=""></a>
+										<a href="#!"><img src="images/instagram-icon.svg" alt=""></a>
+									</div>
+									<div class="nav-login">
+										<a href="#!" class="login"><img src="images/user-icon.svg" alt="">Войти</a>
+										<a href="#!" class="reg">Регистрация</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="head-block">
+							<div class="head-logo">
+								<a href="#!"><img src="images/logo.svg" alt=""></a>
+								<span>Обрудование для сверленияи металлообработки</span>
+							</div>
+							<div class="head-download">
+								<a href="#!"><img src="images/prayslist-icon.svg" alt="">Скачать прайс-лист</a>
+							</div>
+							<div class="head-back-call">
+								<a href="tel:" class="tel">8 812 454-00-80 </a>
+								<a href="#!" class="back-call">Обратный звонок</a>
+							</div>
+						</div>
+					</div>
+                </div>
+			</div>
+
+			<div class="container-fluid head-menu-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="head-menu">
+								<div class="head-catalog">
+									<a href="#!"><img src="images/catalog-icon.svg" alt="">каталог</a>
+								</div>
+								<div class="head-search">
+									<input type="text" name="search" id="search" placeholder="Поиск по сатйу...">
+									<button><img src="images/search-icon.svg" alt=""></button>
+								</div>
+								<div class="head-info">
+									<div class="head-compair">
+										<a href="#!">Сравнение товаров <span>9+</span></a>
+									</div>
+									<div class="head-basket">
+										<a href="#!">
+											<img src="images/cart-icon.svg" alt="">
+											<span class="basket-info">
+												<span class="basket-product">Товаров: 2</span>
+												<span class="basket-price">2 182 ₽</span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="breadcrumb">
+							<li><a href="#!">Главная</a></li>
+							<li><span></span></li>
+							<li>Личный кабинет</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <section class="history-sec">
+                <div class="container">
+                    <div class="row">
+						<div class="title">
+							<h1>Личный кабинет</h1>
+						</div>
+                    </div>
+					
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="history-nav">
+								<ul class="nav nav-pills" id="pills-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="pills-purchase-tab" data-bs-toggle="pill" data-bs-target="#pills-purchase" type="button" role="tab" aria-controls="pills-purchase" aria-selected="true">История заказов</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Личные данные</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-security-tab" data-bs-toggle="pill" data-bs-target="#pills-security" type="button" role="tab" aria-controls="pills-security" aria-selected="false">Безопасность</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-my-tab" data-bs-toggle="pill" data-bs-target="#pills-my" type="button" role="tab" aria-controls="pills-my" aria-selected="false">Моя техника</button>
+									</li>
+								</ul>
+								<div class="reg-machine">
+									<a href="#!">Зарегистрировать станок</a>
+								</div>
+							</div>
+							
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-purchase" role="tabpanel" aria-labelledby="pills-purchase-tab" tabindex="0">
+									<div class="history-table">
+										<div class="accordion" id="accordionPanelsStayOpenExample">
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+													<div class="top-info">
+														<div class="top-left">
+															<div class="order-num"><span>№248</span></div>
+															<div class="order-date"><span>от 29 сентября 2022</span></div>
+															<div class="order-awaiting"><span>Ожидает оплаты</span></div>
+														</div>
+														<div class="top-right">
+															<div class="order-pay order-btns"><a href="#!"><img src="images/pay-icon.svg" alt=""> Оплатить</a></div>
+															<div class="order-link order-btns"><a href="#!"><img src="images/link-icon.svg" alt=""> КРНФ-005078</a></div>
+															<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+															<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+														</div>
+													</div>
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+														<span class="hide-btn">Скрыть</span>
+														<span class="detail-btn">Детали</span>
+														<img src="images/accordion-arrow.svg" alt="">
+													</button>
+												</h2>
+												<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+													<div class="accordion-body">
+														<div class="order-block-top">
+															<div class="order-block-left">
+																<p>Наименование</p>
+															</div>
+															<div class="order-block-right">
+																<p>Цена за ед.</p>
+																<p>Кол-во</p>
+																<p>Сумма</p>
+															</div>
+														</div>
+
+
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Сверло корончатое из быстрорежущей стали 12х30 "Bohre"</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img2.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Аренда сверлильного станка на магните</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+
+														<div class="order-block-total">
+															<div class="order-total">
+																<p>Итого:</p>
+																<span>36 685,60 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>В том числе НДС:</p>
+																<span>6 114,26 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>Всего к оплате:</p>
+																<span class="all-total">36 685,60 ₽</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+													<div class="top-info">
+														<div class="top-left">
+															<div class="order-num"><span>№248</span></div>
+															<div class="order-date"><span>от 29 сентября 2022</span></div>
+															<div class="order-awaiting"><span>В обработке</span></div>
+														</div>
+														<div class="top-right">
+															<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+															<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+														</div>
+													</div>
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+														<span class="hide-btn">Скрыть</span>
+														<span class="detail-btn">Детали</span>
+														<img src="images/accordion-arrow.svg" alt="">
+													</button>
+												</h2>
+												<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+													<div class="accordion-body">
+														<div class="order-block-top">
+															<div class="order-block-left">
+																<p>Наименование</p>
+															</div>
+															<div class="order-block-right">
+																<p>Цена за ед.</p>
+																<p>Кол-во</p>
+																<p>Сумма</p>
+															</div>
+														</div>
+
+
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Сверло корончатое из быстрорежущей стали 12х30 "Bohre"</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img2.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Аренда сверлильного станка на магните</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+
+														<div class="order-block-total">
+															<div class="order-total">
+																<p>Итого:</p>
+																<span>36 685,60 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>В том числе НДС:</p>
+																<span>6 114,26 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>Всего к оплате:</p>
+																<span class="all-total">36 685,60 ₽</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+													<div class="top-info">
+														<div class="top-left">
+															<div class="order-num"><span>№248</span></div>
+															<div class="order-date"><span>от 29 сентября 2022</span></div>
+															<div class="order-awaiting"><span>Оплачен</span></div>
+														</div>
+														<div class="top-right">
+															<div class="order-link order-btns"><a href="#!"><img src="images/link-icon.svg" alt=""> КРНФ-005078</a></div>
+															<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+															<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+														</div>
+													</div>
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+														<span class="hide-btn">Скрыть</span>
+														<span class="detail-btn">Детали</span>
+														<img src="images/accordion-arrow.svg" alt="">
+													</button>
+												</h2>
+												<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+													<div class="accordion-body">
+														<div class="order-block-top">
+															<div class="order-block-left">
+																<p>Наименование</p>
+															</div>
+															<div class="order-block-right">
+																<p>Цена за ед.</p>
+																<p>Кол-во</p>
+																<p>Сумма</p>
+															</div>
+														</div>
+
+
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Сверло корончатое из быстрорежущей стали 12х30 "Bohre"</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+														<div class="order-block">
+															<div class="left-item">
+																<div class="order-in">
+																	<div class="order-img">
+																		<img src="images/order-img2.png" alt="">
+																	</div>
+																	<div class="order-id-name">
+																		<span class="order-id">00006044</span>
+																		<span class="order-name">Аренда сверлильного станка на магните</span>
+																	</div>
+																</div>
+															</div>
+															<div class="right-item">
+																<div class="order-block-price">
+																	<p>1 091 ₽</p>
+																</div>
+																<div class="order-amount">
+																	<input type="number" name="amount" id="amount" value="2">
+																</div>
+																<div class="order-sum">
+																	<p>2 182 ₽</p>
+																</div>
+															</div>
+														</div>
+
+														<div class="order-block-total">
+															<div class="order-total">
+																<p>Итого:</p>
+																<span>36 685,60 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>В том числе НДС:</p>
+																<span>6 114,26 ₽</span>
+															</div>
+															<div class="order-total">
+																<p>Всего к оплате:</p>
+																<span class="all-total">36 685,60 ₽</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+								<div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab" tabindex="0">...</div>
+								<div class="tab-pane fade" id="pills-my" role="tabpanel" aria-labelledby="pills-my-tab" tabindex="0">...</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </section>
+        </main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row ftr-rov">
+					<div class="col-lg-4">
+						<div class="ftr-menu">
+							<a href="#!">Магнитные сверлильные станки</a>
+							<a href="#!">Корончатые сверла по металлу</a>
+							<a href="#!">Аксессуары к сверлильным станкам на магните</a>
+							<a href="#!">Бензогайковерты, комплектующие и запчасти</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ftr-menu">
+							<a href="#!">Борфрезы</a>
+							<a href="#!">Отрезные диски</a>
+							<a href="#!">Отрезные пилы</a>
+							<a href="#!">Рельсорезные станки и комплектующие</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ftr-menu">
+							<a href="#!">Рельсосверлильные станки и комплектующие</a>
+							<a href="#!">Станки для снятия фаски</a>
+							<a href="#!">Услуги</a>
+						</div>
+					</div>
+                </div>
+			</div>
+
+			<div class="container-fluid ftr-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="ftr-left">
+								<p>2017 — 2020 © Компания «Kerner»</p>
+								<a href="#!">Оборудование для сверления и металлообработки</a>
+								<a href="#!">Политика компании в отношении обработки персональных данных</a>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ftr-right">
+								<div class="ftr-tel">
+									<a href="tel:8 812 454-00-80" class="ftr-tel-num">8 812 454-00-80</a>
+									<a href="#!" class="ftr-callback">Обратный звонок</a>
+								</div>
+								<div class="ftr-support">
+									<p>Есть вопросы?</p>
+									<span>Напишите нам!</span>
+									<a href="mailto:info@kerner.ru">info@kerner.ru</a>
+								</div>
+								<a href="#!" class="ftr-call"><img src="images/call-icon.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
