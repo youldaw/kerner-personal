@@ -20,7 +20,17 @@ $(function (){
     $('.mob-search, .search-closer').on('click',function(e){
       e.preventDefault();
       $('.search-content').toggleClass('active');
-  });
+    });
+
+    $('#eye-pass').on('click',function(e){
+      e.preventDefault();
+      $('.safety_form').toggleClass('active');
+    });
+
+    $('.add-tech').on('click',function(e){
+      e.preventDefault();
+      $('.result-case').toggleClass('active');
+    });
 
 });
 

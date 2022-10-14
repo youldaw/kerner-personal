@@ -197,10 +197,14 @@
 											<img src="images/nav-arrow.svg" alt="" class="for-tab">
 										</button>
 									</li>
+
+									<li class="nav-item reg-machine" role="presentation">
+										<button class="nav-link" id="pills-reg-tab" data-bs-toggle="pill" data-bs-target="#pills-reg" type="button" role="tab" aria-controls="pills-reg" aria-selected="false">
+											Зарегистрировать станок
+											<img src="images/nav-arrow.svg" alt="" class="for-tab">
+										</button>
+									</li>
 								</ul>
-								<div class="reg-machine">
-									<a href="#!">Зарегистрировать станок</a>
-								</div>
 							</div>
 							
 							<div class="tab-content" id="pills-tabContent">
@@ -640,21 +644,22 @@
 											<form class="safety_form">
 												<div class="form-group">
 													<label for="">Старый пароль</label>
-													<input type="password" placeholder="**************">
+													<input type="password" value="12345678901234567890" required>
 												</div>
 												<div class="form-group">
 													<label for="">Новый пароль</label>
-													<div class="new_password for-pass">
-														<input type="password" placeholder="*********************" class="new_input">
-														<button class="eye_btn password-icon">
-															<img class="eye_btn eye_on" src="images/eye.svg" alt="">
-															<img class="eye_off" src="images/eye_off.svg" alt="">
-														</button>
+													<div class="new_password for-pass custom-pass">
+														<span id="eye-pass" class="fa-eye">
+															<img class="eye-opened" src="images/eye.svg" alt="">
+															<img class="eye-closed" src="images/eye_off.svg" alt="">
+														</span>
+														<input id="input-pass" class="input-password" type="password" value="12345678901234567890">
 													</div>
-												</div>
-												<div class="form-group">
-													<label for="">Повторите новый пароль *</label>
-													<input type="password" placeholder="**********************" required>
+
+													<div class="form-group repeat-pass">
+														<label for="">Повторите новый пароль *</label>
+														<input type="password" value="12345678901234567890">
+													</div>
 												</div>
 												<div class="safety_btn-block">
 													<button type="submit" class="safety_btn">Сменить пароль</button>
@@ -881,6 +886,10 @@
 										</div>
 									</div>
 								</div>
+
+								<div class="tab-pane fade" id="pills-reg" role="tabpanel" aria-labelledby="pills-reg-tab" tabindex="0">	
+									
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1000,7 +1009,7 @@
 											<div class="row">
 												<div class="col-sm-6">
 													<div class="captcha">
-														<img src="images/google_recaptcha.png" alt="">
+														
 													</div>
 												</div>
 												<div class="col-sm-6">
@@ -1025,6 +1034,22 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+
+	<script>
+		var myInput = document.getElementById('input-pass'),
+            myIcon = document.getElementById('eye-pass');
+            myIcon.onclick = function () {
+            if (myIcon.classList.contains('fa-eye')) {
+                this.classList.toggle('fa-eye-slash');
+                this.classList.toggle('fa-eye');
+                myInput.setAttribute('type', 'text');
+            } else {
+                myInput.setAttribute('type', 'password');
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            };
+        };
+	</script>
 	
 </body>
 </html>
