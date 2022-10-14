@@ -36,6 +36,9 @@
 										<li class="nav-item">
 											<a class="nav-link" href="#">Отзывы</a>
 										</li>
+										<li class="tab head-download">
+											<a href="#!"><img src="images/prayslist-icon.svg" alt="">Скачать прайс-лист</a>
+										</li>
 									</ul>
 									<div class="nav-socials">
 										<a href="#!"><img src="images/vk-icon.svg" alt=""></a>
@@ -54,20 +57,58 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container head-block-con">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="head-block">
 							<div class="head-logo">
 								<a href="#!"><img src="images/logo.svg" alt=""></a>
-								<span>Обрудование для сверленияи металлообработки</span>
+								<span class="pc">Обрудование для сверленияи металлообработки</span>
 							</div>
-							<div class="head-download">
+							<div class="head-download pc">
 								<a href="#!"><img src="images/prayslist-icon.svg" alt="">Скачать прайс-лист</a>
 							</div>
 							<div class="head-back-call">
 								<a href="tel:" class="tel">8 812 454-00-80 </a>
 								<a href="#!" class="back-call">Обратный звонок</a>
+							</div>
+
+							<div class="tab">
+								<div class="mob-head">
+									<div class="mob-head-btns">
+										<a href="#!" class="mob-search header-mobile__search scroll-on-off" id="header-mobile__search">
+											<img src="images/mob-search-icon.svg" alt="">
+										</a>
+										<a href="#!" class="mob-phone"><img src="images/mob-phone-icon.svg" alt=""></a>
+									</div>
+									<a href="#!" class="mob-head-menu">
+										<span class="one"></span>
+										<span class="two"></span>
+										<span class="three"></span>
+									</a>
+								</div>
+
+								<div id="header-mobile-search-result" class="search-content">
+									<div class="header-mobile-search-result">
+										<div class="header-mobile-search-result__header">
+											<form class="header-mobile-search-result__form">
+												<input class="header-mobile-search-result__input" type="search">
+												<input class="header-mobile-search-result__submit" type="submit">
+												<img src="images/search-icon.svg" alt="">
+											</form>
+											
+											<div class="header-mobile-search-result__burger">
+												<div class="burger" id="header-mobile-search-result__burger">
+													<a href="#!" class="search-closer">
+														<span class="line-one"></span>
+														<span class="line-two"></span>
+													</a>
+												</div>
+											</div>
+											<div class="header-mobile-search-result__lists"></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -119,6 +160,7 @@
 					</div>
 				</div>
 			</div>
+			
             <section class="history-sec">
                 <div class="container">
                     <div class="row">
@@ -128,20 +170,32 @@
                     </div>
 					
 					<div class="row">
-						<div class="col-lg-12">
+						<div class="col-lg-12 history-col">
 							<div class="history-nav">
 								<ul class="nav nav-pills" id="pills-tab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="pills-purchase-tab" data-bs-toggle="pill" data-bs-target="#pills-purchase" type="button" role="tab" aria-controls="pills-purchase" aria-selected="true">История заказов</button>
+										<button class="nav-link active" id="pills-purchase-tab" data-bs-toggle="pill" data-bs-target="#pills-purchase" type="button" role="tab" aria-controls="pills-purchase" aria-selected="true">
+											История заказов
+											<img src="images/nav-arrow.svg" alt="" class="for-tab">
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Личные данные</button>
+										<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+											Личные данные
+											<img src="images/nav-arrow.svg" alt="" class="for-tab">
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="pills-security-tab" data-bs-toggle="pill" data-bs-target="#pills-security" type="button" role="tab" aria-controls="pills-security" aria-selected="false">Безопасность</button>
+										<button class="nav-link" id="pills-security-tab" data-bs-toggle="pill" data-bs-target="#pills-security" type="button" role="tab" aria-controls="pills-security" aria-selected="false">
+											Безопасность
+											<img src="images/nav-arrow.svg" alt="" class="for-tab">
+										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="pills-my-tab" data-bs-toggle="pill" data-bs-target="#pills-my" type="button" role="tab" aria-controls="pills-my" aria-selected="false">Моя техника</button>
+										<button class="nav-link" id="pills-my-tab" data-bs-toggle="pill" data-bs-target="#pills-my" type="button" role="tab" aria-controls="pills-my" aria-selected="false">
+											Моя техника
+											<img src="images/nav-arrow.svg" alt="" class="for-tab">
+										</button>
 									</li>
 								</ul>
 								<div class="reg-machine">
@@ -186,8 +240,6 @@
 																<p>Сумма</p>
 															</div>
 														</div>
-
-
 														<div class="order-block">
 															<div class="left-item">
 																<div class="order-in">
@@ -202,12 +254,15 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
@@ -226,19 +281,31 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
 														</div>
 
+														<div class="mob">
+															<div class="order-mob-btn">
+																<div class="order-pay order-btns"><a href="#!"><img src="images/pay-icon.svg" alt=""> Оплатить</a></div>
+																<div class="order-link order-btns"><a href="#!"><img src="images/link-icon.svg" alt=""> КРНФ-005078</a></div>
+																<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+																<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+															</div>
+														</div>
+
 														<div class="order-block-total">
-															<div class="order-total">
+															<div class="order-total all">
 																<p>Итого:</p>
 																<span>36 685,60 ₽</span>
 															</div>
@@ -286,8 +353,6 @@
 																<p>Сумма</p>
 															</div>
 														</div>
-
-
 														<div class="order-block">
 															<div class="left-item">
 																<div class="order-in">
@@ -302,12 +367,15 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
@@ -326,19 +394,31 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
 														</div>
 
+														<div class="mob">
+															<div class="order-mob-btn">
+																<div class="order-pay order-btns"><a href="#!"><img src="images/pay-icon.svg" alt=""> Оплатить</a></div>
+																<div class="order-link order-btns"><a href="#!"><img src="images/link-icon.svg" alt=""> КРНФ-005078</a></div>
+																<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+																<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+															</div>
+														</div>
+
 														<div class="order-block-total">
-															<div class="order-total">
+															<div class="order-total all">
 																<p>Итого:</p>
 																<span>36 685,60 ₽</span>
 															</div>
@@ -388,7 +468,6 @@
 															</div>
 														</div>
 
-
 														<div class="order-block">
 															<div class="left-item">
 																<div class="order-in">
@@ -403,12 +482,15 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
@@ -427,19 +509,31 @@
 															</div>
 															<div class="right-item">
 																<div class="order-block-price">
+																	<i class="mob">Цена за ед.</i>
 																	<p>1 091 ₽</p>
 																</div>
 																<div class="order-amount">
-																	<input type="number" name="amount" id="amount" value="2">
+																	<i class="mob">Кол-во</i>
+																	<span>2</span>
 																</div>
 																<div class="order-sum">
+																	<i class="mob">Сумма</i>
 																	<p>2 182 ₽</p>
 																</div>
 															</div>
 														</div>
 
+														<div class="mob">
+															<div class="order-mob-btn">
+																<div class="order-pay order-btns"><a href="#!"><img src="images/pay-icon.svg" alt=""> Оплатить</a></div>
+																<div class="order-link order-btns"><a href="#!"><img src="images/link-icon.svg" alt=""> КРНФ-005078</a></div>
+																<div class="order-repeat order-btns"><a href="#!"><img src="images/repeat-icon.svg" alt=""> Повторить заказ</a></div>
+																<div class="order-cancel order-btns"><a href="#!"><img src="images/cancel-icon.svg" alt=""> Отменить заказ</a></div>
+															</div>
+														</div>
+
 														<div class="order-block-total">
-															<div class="order-total">
+															<div class="order-total all">
 																<p>Итого:</p>
 																<span>36 685,60 ₽</span>
 															</div>
@@ -458,9 +552,335 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-								<div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab" tabindex="0">...</div>
-								<div class="tab-pane fade" id="pills-my" role="tabpanel" aria-labelledby="pills-my-tab" tabindex="0">...</div>
+								<div class="tab-pane personal_data fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+									<div class="personal_data_in">
+										<div>
+											<form class="personal_data_form">
+												<div class="form-group">
+													<label for="personal_name">Контактное лицо</label><br>
+													<input id="personal_name" type="text" placeholder="Имя"><br>
+												</div>
+												<div class="form-group">
+													<label for="personal_number">Телефон</label><br>
+													<input type="tel" id="phone" name="phone" placeholder="+ 7 ("><br>
+												</div>
+												<div class="form-group">
+													<label for="personal_mail">Электронная почта</label><br>
+													<input type="email" id="personal_mail" name="email" placeholder="mail@yourmail.ru"><br>
+												</div>
+												<div class="form-group">
+													<label for="">ИНН</label><br>
+													<div class="search_block">
+														<input type="number" placeholder="9729154380" class="search_input">
+														<button type="button" class="personal_search">Поиск</button>
+													</div>
+													<br>
+												</div>
+											</form>
+											<div class="check check_mobile">
+												<div class="check_main check_mobile_in">
+													<div class="check_in">
+														<h2>Данные о компании</h2>
+														<div class="check_row">
+															<h5>Название:</h5><p>ООО “АТОМ”</p>
+														</div>
+														<div class="check_row">
+															<h5>ИНН:</h5><p>9729154380</p>
+														</div>
+														<div class="check_row">
+															<h5>ОГРН:</h5><p>5177746066581</p>
+														</div>
+														<div class="check_row">
+															<h5>КПП:</h5><p>772801001</p>
+														</div>
+														<div class="check_row">
+															<h5>Банк получатель:</h5><p>Тинькоф</p>
+														</div>
+														<div class="account_number">
+															<div class="check_row"><h5>БИК:</h5><p>ХХ ХХ ХХ ХХХ</p></div>
+															<div class="check_row"><h5>Счет №:</h5><p>ХХ ХХ ХХ ХХХ</p></div>
+														</div>
+														<div class="check_sum">
+															<div class="check_row"><h5>Текущий статус:</h5><p>Крупный опт</p></div>
+															<div class="check_row"><h5>Сумма сделок:</h5><p>256 252 ₽</p></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div><button class="personal_btn" type="submit">Сохранить изменения</button></div>
+										</div>
+										<div class="check check_desktop">
+											<div class="check_main">
+												<div class="check_in">
+													<h2>Данные о компании</h2>
+													<div class="check_row"><h5>Название:</h5><p>ООО “АТОМ”</p></div>
+													<div class="check_row"><h5>ИНН:</h5><p>9729154380</p></div>
+													<div class="check_row"><h5>ОГРН:</h5><p>5177746066581</p></div>
+													<div class="check_row"><h5>КПП:</h5><p>772801001</p></div>
+													<div class="check_row"><h5>Банк получатель:</h5><p>Тинькоф</p></div>
+													<div class="account_number">
+														<div class="check_row"><h5>БИК:</h5><p>ХХ ХХ ХХ ХХХ</p></div>
+														<div class="check_row"><h5>Счет №:</h5><p>ХХ ХХ ХХ ХХХ</p></div>
+													</div>
+													<div class="check_sum">
+														<div class="check_row"><h5>Текущий статус:</h5><p>Крупный опт</p></div>
+														<div class="check_row"><h5>Сумма сделок:</h5><p>256 252 ₽</p></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab" tabindex="0">
+									<div class="safety">
+										<div class="safety_in">
+											<div class="safety_title">
+												<h1>Смена пароля</h1>
+											</div>
+											<form class="safety_form">
+												<div class="form-group">
+													<label for="">Старый пароль</label>
+													<input type="password" placeholder="**************">
+												</div>
+												<div class="form-group">
+													<label for="">Новый пароль</label>
+													<div class="new_password for-pass">
+														<input type="password" placeholder="*********************" class="new_input">
+														<button class="eye_btn password-icon">
+															<img class="eye_btn eye_on" src="images/eye.svg" alt="">
+															<img class="eye_off" src="images/eye_off.svg" alt="">
+														</button>
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="">Повторите новый пароль *</label>
+													<input type="password" placeholder="**********************" required>
+												</div>
+												<div class="safety_btn-block">
+													<button type="submit" class="safety_btn">Сменить пароль</button>
+												</div>
+											</form>
+											<h3>Параметры входа</h3>
+											<div class="safety_checkbox">
+												<label class="control control--checkbox">
+													<input type="checkbox"/>
+													<div class="control__indicator"></div>
+													<span>Вход по номеру телефона</span>
+												</label>
+											</div>
+											<div class="safety_checkbox">
+												<label class="control control--checkbox">
+													<input type="checkbox"/>
+													<div class="control__indicator"></div>
+													<span>Вход по E-mail адресу</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-my" role="tabpanel" aria-labelledby="pills-my-tab" tabindex="0">	
+									<div class="technique">
+
+										<div class="mob">
+											<a href="#!" class="mob-reg-btn">
+												<span class="plus-icon"><img src="images/plus-icon.svg" alt=""></span>
+												<span class="mob-reg-text">Зарегистрировать станок</span>
+											</a>
+										</div>
+
+										<div class="technique_in">
+											<div class="technique_top">
+												<div class="row">
+													<div class="col-2">
+														<div class="technique_title text-left">Наименование</div>
+													</div>
+													<div class="col">
+														<div class="technique_title">Модель</div>
+													</div>
+													<div class="col">
+														<div class="technique_title">Дата покупки</div>
+													</div>
+													<div class="col">
+														<div class="technique_title">Гарантия до</div>
+													</div>
+													<div class="col-1">
+														<div class="technique_title">Инструкция</div>
+													</div>
+													<div class="col-2">
+														<div class="technique_title ps-2">Серийный номер</div>
+													</div>
+													<div class="col-2"></div>
+													<div class="col-1"></div>
+												</div>
+											</div>
+
+											<div class="technique_block">
+												<div class="row ">
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_name">
+														<h3>Магнитный сверлильный станок</h3>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_model">
+														<h4>Bohre МС-42</h4>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-purchase">
+														<span class="mob">Дата покупки</span>
+														<p>20.01.2022</p>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-garant">
+														<span class="mob">Гарантия до</span>
+														<p>20.01.2024</p>
+													</div>
+													<div class="col-lg-1 col-md-1 col-sm-12 technique_link">
+														<a href="#!" class="tech-link"><img src="images/copy_icon.svg" alt="copy_icon.svg"></a>
+													</div>
+													<div class="col-lg-2 col-md-3 col-sm-12 technique_serial_number">
+														<h5>E4FC73OC032CJV4-4933498V48FJ4F8JF3</h5>
+													</div>
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_case">
+														<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+													<div class="col-lg-1 col-md-3 col-sm-12 technique_delete">
+														<a href="#" class="d-flex align-items-center">
+															<span>
+																<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2143 5.64706H0V3.76471H2.78571V0H10.2143V3.76471H13V5.64706H10.2143ZM8.35714 1.88235H4.64286V3.76471H8.35714V1.88235ZM5.57143 8.47059V12.2353H4.64286V8.47059H5.57143ZM8.35714 8.47059V12.2353H7.42857V8.47059H8.35714ZM2.78571 14.1176H10.2143V7.52941H12.0714V16H0.928571V7.52941H2.78571V14.1176Z" fill="#828282"/>
+																</svg>
+															</span>																
+															Удалить
+														</a>
+													</div>
+												</div>
+
+												<div class="mob">
+													<div class="mob-technique-btns">
+														<a href="#!" class="tech-link">
+															<img src="images/copy_icon.svg" alt="">
+															<span>Инструкция</span>
+														</a>
+
+														<a href="#!" class="garant-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty_hover.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="technique_block">
+												<div class="row ">
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_name">
+														<h3>Магнитный сверлильный станок</h3>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_model">
+														<h4>Rotabroach COMMANDO 40</h4>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-purchase">
+														<span class="mob">Дата покупки</span>
+														<p>20.01.2022</p>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-garant">
+														<span class="mob">Гарантия до</span>
+														<p>20.01.2024</p>
+													</div>
+													<div class="col-lg-1 col-md-1 col-sm-12 technique_link">
+														<a href="#!" class="tech-link"><img src="images/copy_icon.svg" alt="copy_icon.svg"></a>
+													</div>
+													<div class="col-lg-2 col-md-3 col-sm-12 technique_serial_number">
+														<h5>E4FC73OC032CJV4-4933498V48FJ4F8JF3</h5>
+													</div>
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_case">
+														<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+													<div class="col-lg-1 col-md-3 col-sm-12 technique_delete">
+														<a href="#" class="d-flex align-items-center">
+															<span>
+																<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2143 5.64706H0V3.76471H2.78571V0H10.2143V3.76471H13V5.64706H10.2143ZM8.35714 1.88235H4.64286V3.76471H8.35714V1.88235ZM5.57143 8.47059V12.2353H4.64286V8.47059H5.57143ZM8.35714 8.47059V12.2353H7.42857V8.47059H8.35714ZM2.78571 14.1176H10.2143V7.52941H12.0714V16H0.928571V7.52941H2.78571V14.1176Z" fill="#828282"/>
+																</svg>
+															</span>																
+															Удалить
+														</a>
+													</div>
+												</div>
+
+												<div class="mob">
+													<div class="mob-technique-btns">
+														<a href="#!" class="tech-link">
+															<img src="images/copy_icon.svg" alt="">
+															<span>Инструкция</span>
+														</a>
+
+														<a href="#!" class="garant-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty_hover.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="technique_block">
+												<div class="row ">
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_name">
+														<h3>Магнитный сверлильный станок</h3>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_model">
+														<h4>Bohre МС-40</h4>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-purchase">
+														<span class="mob">Дата покупки</span>
+														<p>20.01.2022</p>
+													</div>
+													<div class="col-lg col-md col-sm col-12 technique_date-garant">
+														<span class="mob">Гарантия до</span>
+														<p>20.01.2024</p>
+													</div>
+													<div class="col-lg-1 col-md-1 col-sm-12 technique_link">
+														<a href="#!" class="tech-link"><img src="images/copy_icon.svg" alt="copy_icon.svg"></a>
+													</div>
+													<div class="col-lg-2 col-md-3 col-sm-12 technique_serial_number">
+														<h5>E4FC73OC032CJV4-4933498V48FJ4F8JF3</h5>
+													</div>
+													<div class="col-lg-2 col-md-4 col-sm-12 technique_case">
+														<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+													<div class="col-lg-1 col-md-3 col-sm-12 technique_delete">
+														<a href="#" class="d-flex align-items-center">
+															<span>
+																<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2143 5.64706H0V3.76471H2.78571V0H10.2143V3.76471H13V5.64706H10.2143ZM8.35714 1.88235H4.64286V3.76471H8.35714V1.88235ZM5.57143 8.47059V12.2353H4.64286V8.47059H5.57143ZM8.35714 8.47059V12.2353H7.42857V8.47059H8.35714ZM2.78571 14.1176H10.2143V7.52941H12.0714V16H0.928571V7.52941H2.78571V14.1176Z" fill="#828282"/>
+																</svg>
+															</span>																
+															Удалить
+														</a>
+													</div>
+												</div>
+
+												<div class="mob">
+													<div class="mob-technique-btns">
+														<a href="#!" class="tech-link">
+															<img src="images/copy_icon.svg" alt="">
+															<span>Инструкция</span>
+														</a>
+
+														<a href="#!" class="garant-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+															<img src="images/warranty_hover.svg" alt="warranty.svg">
+															<span>Гарантийный случай</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -500,14 +920,14 @@
 			<div class="container-fluid ftr-con">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-5">
+						<div class="col-lg-5 ftr-col-one">
 							<div class="ftr-left">
 								<p>2017 — 2020 © Компания «Kerner»</p>
-								<a href="#!">Оборудование для сверления и металлообработки</a>
-								<a href="#!">Политика компании в отношении обработки персональных данных</a>
+								<a href="#!" class="ftr-info-link">Оборудование для сверления и металлообработки</a>
+								<a href="#!" class="ftr-politic-link">Политика компании в отношении обработки персональных данных</a>
 							</div>
 						</div>
-						<div class="col-lg-7">
+						<div class="col-lg-7 ftr-col-two">
 							<div class="ftr-right">
 								<div class="ftr-tel">
 									<a href="tel:8 812 454-00-80" class="ftr-tel-num">8 812 454-00-80</a>
@@ -517,8 +937,10 @@
 									<p>Есть вопросы?</p>
 									<span>Напишите нам!</span>
 									<a href="mailto:info@kerner.ru">info@kerner.ru</a>
+
+									<a href="#!" class="ftr-call mob"><img src="images/call-icon.svg" alt=""></a>
 								</div>
-								<a href="#!" class="ftr-call"><img src="images/call-icon.svg" alt=""></a>
+								<a href="#!" class="ftr-call pc"><img src="images/call-icon.svg" alt=""></a>
 							</div>
 						</div>
 					</div>
@@ -527,9 +949,82 @@
 		</footer>
 	</div>
 
+
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		Launch demo modal
+	</button> -->
+  
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Гарантийный случай</h1>
+					<button type="button" data-bs-dismiss="modal" aria-label="Close"><img src="images/close.svg" alt=""></button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-form">
+						<form action="#!" id="modal-form-id">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="form-group for-mar">
+										<p>Имя <span>*</span></p>
+										<input type="text" name="name-modal" id="name-modal" placeholder="Ваше имя" required>
+									</div>
+									<div class="form-group">
+										<p>Телефон <span>*</span></p>
+										<input type="text" id="warranty_tel" name="warranty_tel" placeholder="+ 7 (" required>
+									</div>
+									<div class="file-uploader" action="" enctype="multipart/form-data">
+										<label class="filelabel file-chooser">
+											<div>
+												<img src="images/file-icon.svg" alt="">
+												<span class="title">Загрузить фото (макс 10 шт)</span>
+											</div>
+											<input type="file" class="FileUpload1 file-chooser__input" id="FileInput" multiple/>
+										</label>
+										<div class="file-uploader__message-area">
+										  
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-8">
+									<div class="modal-right">
+										<div class="form-group">
+											<p>Комментарий:</p>
+											<textarea name="comment" id="comment"></textarea>
+										</div>
+										<div class="right-block">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="captcha">
+														<img src="images/google_recaptcha.png" alt="">
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="modal-btn">
+														<button type="submit" id="modal-btn-id">Отправить заявку</button>
+														<p>Нажимая на кнопку, Вы даете согласие на <a href="#!">обработку</a> своих персональных данных</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+	
 </body>
 </html>
