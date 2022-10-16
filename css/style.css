@@ -1001,7 +1001,9 @@ header .head-menu .head-basket .basket-price {
 .technique_in .technique_block .technique_case a {
 	display: flex;
 	align-items: center;
+    justify-content: center;
 }
+
 
 .technique_in .technique_block .technique_case.active a.add-tech,
 .technique_in .technique_block .technique_case a.clicked {
@@ -1060,7 +1062,7 @@ header .head-menu .head-basket .basket-price {
 }
 .technique_block a span {
 	display: flex;
-	margin-top: -2px;
+	margin-top: 2px;
 }
 .technique_block a:hover svg path {
 	fill: red;
@@ -1535,7 +1537,9 @@ footer .ftr-support a:hover {
 	transform: scale(1);
 }
 
-
+.history-sec .history-nav .arrow-nav {
+    display: none;
+}
 
 
 
@@ -1785,8 +1789,28 @@ footer .ftr-support a:hover {
 
 
 @media only screen and (max-width: 992px) {
+    .history-sec .nav-pills .nav-item.reg-machine button {
+        width: 100%;
+        padding: 18px 25px;
+    }
     .for-tab {
+        display: none;
+    }
+    .history-sec .history-nav {
+        position: relative;
+    }
+    .arrow-nav {
+        transition: .3s all ease;
+    }
+    .history-sec .history-nav .arrow-nav {
         display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 11px;
+        z-index: 2;
+    }
+    .history-sec .history-nav.active .arrow-nav {
+        transform: rotate(180deg);
     }
     .history-sec .nav-pills .nav-link.active, .history-sec .nav-pills .show>.nav-link {
         background: #F2F2F2 !important;
@@ -1885,6 +1909,27 @@ footer .ftr-support a:hover {
 
 
 @media only screen and (max-width: 768px){
+    .for-pc {display: none;}
+    .technique_in .technique_block .technique_case.active a.clicked {
+        display: flex;
+        background: transparent;
+        border-color: #009BC9;
+    }
+    .technique_in .technique_block .technique_case.active .add-tech.clicked span {
+        color: #009BC9;
+    }
+    .technique_in .technique_block .technique_case a.add-tech {
+        background: #253A5A;
+        color: #fff;
+        border-color: #253A5A;
+    }
+    .technique_in .technique_block .technique_case a.add-tech span {
+        color: #fff;
+    }
+    .result-case p img,
+    .result-case a img {
+        margin-left: 0;
+    }
 	.pc {display: none;}
 	.mob {display: block;}
 	/* mob menu */
@@ -1896,9 +1941,7 @@ footer .ftr-support a:hover {
 		justify-content: center;
 		flex-direction: column;
 	}
-    .history-sec .nav-pills .nav-item.reg-machine button {
-        width: 100%;
-    }
+    
     .safety_form .form-group {
         width: 100%;
     }
@@ -2211,8 +2254,6 @@ footer .ftr-support a:hover {
         text-align: left;
         color: #009BC9;
     }
-    .technique_in .technique_block .technique_case p,
-    .technique_in .technique_block .technique_case a,
     .technique_in .technique_block .technique_link {
         display: none;
     }
@@ -2279,6 +2320,21 @@ footer .ftr-support a:hover {
     }
     .technique_date-garant {
         order: 6;
+    }
+    .adding-new .technique_case {
+        order: 7;
+    }
+    .adding-new .technique_case a {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #009BC9;
+        font-size: 14px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #009BC9;
     }
     .file-uploader {
         margin-top: 20px;
